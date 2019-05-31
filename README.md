@@ -15,4 +15,4 @@ More precisely, the three UCLouvain colors are used as follows:
 * the bullet color for `itemize` and the underline of block titles is "Bleu Gris",
 * the color of `alert` text is "Cyan".
 
-In addition, the EPL color is used for the block titles.
+In addition, the [ICTEAM color](https://www.pantone.com/color-finder/279-C) is used for the block titles.
