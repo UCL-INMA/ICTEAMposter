@@ -131,7 +131,10 @@
   \end{columns}
   \vspace{-2cm}
   \begin{columns}
-   \begin{column}{\linewidth}
+   \begin{column}{0.02\linewidth}
+     % For centering the title horizontally
+   \end{column}
+   \begin{column}{0.96\linewidth}
     \vskip1cm
     \centering
     \usebeamercolor{title in headline}{\color{UCLouvainBleuNuit}\Huge{\textbf{\inserttitle}}\\[0.5ex]}
@@ -139,11 +142,35 @@
     \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}
     \vskip1cm
    \end{column}
+   \begin{column}{0.02\linewidth}
+     \vspace{4cm}\\
+     \includegraphics[height=6cm]{I.png}
+   \end{column}
   \end{columns}
  \vspace{0.5in}
  \hspace{0.5in}\begin{beamercolorbox}[wd=35in,colsep=0.15cm]{cboxb}\end{beamercolorbox}
  \vspace{0.1in}
 }
+
+\setbeamertemplate{footline}{
+ \leavevmode
+  \begin{columns}
+   \begin{column}{0.08\linewidth}
+     \hspace{2cm}\includegraphics[height=6cm]{L.png}
+   \end{column}
+   \begin{column}{0.42\linewidth}
+     \begin{block}{References}
+       \printbibliography
+     \end{block}
+   \end{column}
+   \begin{column}{0.6\linewidth}
+   \end{column}
+  \end{columns}
+ \vspace{0.5in}
+ \hspace{0.5in}\begin{beamercolorbox}[wd=35in,colsep=0.15cm]{cboxb}\end{beamercolorbox}
+ \vspace{0.1in}
+}
+
 
 % Block definition
 \setbeamertemplate{block begin}
