@@ -10,11 +10,17 @@
 \ProvidesPackage{beamerthemeconfposter}
 \RequirePackage{tikz}		% for drawing the nice rounded boxes
 \usetikzlibrary{arrows,backgrounds}
+
+% See http://www.tug.dk/FontCatalogue/montserratregular/
+\RequirePackage[defaultfam,tabular,lining]{montserrat} %% Option 'defaultfam'
+%% only if the base font of the document is to be sans serif
 \RequirePackage[T1]{fontenc}
-\RequirePackage{lmodern}
+\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+%\RequirePackage{lmodern}
 \RequirePackage{textcomp}
 \RequirePackage{amsmath,amssymb}
-\usefonttheme{professionalfonts}
+%\usefonttheme{professionalfonts}
 \newcommand{\makeruleinbox}{{\usebeamercolor[bg]{block alerted title}\centering\hspace*{-0.7cm}\rule{\inboxrule}{0.5cm}}}
 \usepackage{ragged2e}
 
