@@ -12,10 +12,19 @@
 \usetikzlibrary{arrows,backgrounds}
 
 % See http://www.tug.dk/FontCatalogue/montserratregular/
-\RequirePackage[defaultfam,tabular,lining]{montserrat} %% Option 'defaultfam'
+%\RequirePackage[defaultfam,tabular,lining]{montserrat} %% Option 'defaultfam'
 %% only if the base font of the document is to be sans serif
-\RequirePackage[T1]{fontenc}
-\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+%\RequirePackage[T1]{fontenc}
+%\renewcommand*\oldstylenums[1]{{\fontfamily{Montserrat-TOsF}\selectfont #1}}
+
+\RequirePackage{fontspec}
+\setmainfont{Montserrat}[
+Extension = .ttf,
+UprightFont=*-Regular,
+BoldFont=*-Bold,
+ItalicFont=*-Italic,
+BoldItalicFont=*-BoldItalic]
+%\setmainfont{[Montserrat-Regular.ttf]}
 
 %\RequirePackage{lmodern}
 \RequirePackage{textcomp}
