@@ -190,10 +190,12 @@ BoldItalicFont=*-BoldItalic]
     \usebeamerfont{block title}\large\insertblocktitle
     \begin{flushleft}
     \vskip-1cm
-    \begin{tikzpicture}[remember picture,overlay]
-      \shade [inner color=UCLouvainBleuGris, outer color=white]
-      (0,0) rectangle (\textwidth,0.3cm);
-    \end{tikzpicture}
+    % See https://github.com/UCL-INMA/ICTEAMposter/issues/1
+    \includegraphics[width=\textwidth]{line-block.eps}
+%    \begin{tikzpicture}[remember picture,overlay]
+%      \shade [inner color=UCLouvainBleuGris, outer color=white]
+%      (0,0) rectangle (\textwidth,0.3cm);
+%    \end{tikzpicture}
     \end{flushleft}
   \end{beamercolorbox}
   {\parskip0pt\par}
